@@ -1,7 +1,6 @@
 #include <SPI.h>
 #include <Ethernet.h>
 
-int STATUS_LED = 13;
 int BAUD = 9600;
 int HTTP = 80;
 int SERIAL_MAX = 1024;
@@ -20,8 +19,6 @@ void setup() {
   
   // Initialize the web server.
   server.begin();
-  
-  Serial.println("Init complete.");
 }
 
 void loop() {
